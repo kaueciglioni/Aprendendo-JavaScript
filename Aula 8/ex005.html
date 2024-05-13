@@ -21,7 +21,7 @@
 
     <p>Aprenendo a usar <strong>DOM</strong> em JavaScript</p>
 
-    <div id="msg">Clica em mim</div>
+    <div id="msg">Clica em mim</div><br>
 
     <script>
         var corpo = window.document.body
@@ -29,7 +29,11 @@
         window.document.write('Está escrito assim: ' + p1.innerText)
         var d = window.document.getElementById('msg')
         d.style.background = 'green'
-        d.innerText = ('MUDEI')
+        d.innerText = ('Acrescentando um novo texto aqui!')
+
+        var c = window.document.getElementsByTagName('h1')[0]
+        c.innerText = ('MUDANDO O H1')
     </script>
+
 </body>
 </html>
