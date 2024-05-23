@@ -15,10 +15,12 @@
         padding: 20px;
         width: 500px;
         background-color: rgb(156, 155, 152);
+    
     }
 </style>
 
 <body>
+    
 
     <div id="bod">
         <h1>Entregue seu passaporte</h1><br>Escreva de acordo a caracterísitca de seu passaporte<br><br>
@@ -26,7 +28,7 @@
         <strong>Você é de Outra Nacionalidade - 2</strong><br>
         <br>
         <input type="number" name="txtn1" id="txtn1">
-        <input type="button" value="Verificar" onclick="verificar()">
+    <input type="button" class="btn btn-success" value="Verificar" onclick="verificar()">
 
         <div id="res">
             <br> Sua nacionalidade é <strong>(RESPONDA A PERGUNTA)
@@ -38,7 +40,7 @@
         function verificar() {
             var txtp = document.getElementById('txtn1')
             var res = document.getElementById('res')
-            var passaporte = parseInt(txtp.value)
+            var passaporte = Number(txtp.value)
 
             if (passaporte === 1) {
                 res.innerHTML = (`Sua nacionalidade é BRASILEIRO`)
